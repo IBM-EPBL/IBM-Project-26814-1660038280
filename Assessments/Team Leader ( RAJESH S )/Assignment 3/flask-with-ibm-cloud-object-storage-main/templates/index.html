@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+<body>
+   <h1><center>Image Collections</center></h1>
+
+   {% for row in files %}
+   <div style="border: 1px solid #762af1;margin:10px;">
+      <h3>Filename : {{row}} </h3>
+      <img src="https://solorajez.s3.jp-tok.cloud-object-storage.appdomain.cloud/{{row}}" width="150px"></td>
+   </div>
+   {% endfor %}
+</body>
+
+</html>
